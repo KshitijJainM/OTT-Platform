@@ -1,3 +1,4 @@
+import firebase from "firebase";
 const firebaseConfig = {
     apiKey: "AIzaSyAzTUEI1zNOsLH1ZzCrNiaWVfBkViwxaeo",
     authDomain: "disney-plus-e2b22.firebaseapp.com",
@@ -7,7 +8,7 @@ const firebaseConfig = {
     appId: "1:830489617739:web:acc9163415fec55d3674ce",
 };
 
-const firebaseapp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
